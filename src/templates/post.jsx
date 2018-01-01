@@ -5,7 +5,6 @@ import CardText from "react-md/lib/Cards/CardText";
 import UserInfo from "../components/UserInfo/UserInfo";
 import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
-import PostCover from "../components/PostCover/PostCover";
 import PostInfo from "../components/PostInfo/PostInfo";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import PostSuggestions from "../components/PostSuggestions/PostSuggestions";
@@ -43,7 +42,6 @@ export default class PostTemplate extends React.Component {
     const { mobile } = this.state;
     const { slug } = this.props.pathContext;
     const expanded = !mobile;
-    const postOverlapClass = mobile ? "post-overlap-mobile" : "post-overlap";
     const postNode = this.props.data.markdownRemark;
     const post = postNode.frontmatter;
     if (!post.id) {
@@ -59,9 +57,8 @@ export default class PostTemplate extends React.Component {
           <link rel="canonical" href={`${config.siteUrl}${post.id}`} />
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
-        <PostCover postNode={postNode} mobile={mobile} />
         <div
-          className={`md-grid md-cell--9 post-page-contents mobile-fix ${postOverlapClass}`}
+          className={`md-grid md-cell--9 post-page-contents mobile-fix`}
         >
           <Card className="md-grid md-cell md-cell--12 post">
             <CardText className="post-body">
@@ -103,7 +100,6 @@ export const pageQuery = graphql`
       excerpt
       frontmatter {
         title
-        cover
         date
         category
         tags

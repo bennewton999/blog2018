@@ -1,6 +1,5 @@
 ---
 title: "Deploy your Gatsby.js Site to AWS S3"
-cover: "/logos/matt-artz-353290.jpg"
 date: "11/24/2017"
 category: "tech"
 tags:

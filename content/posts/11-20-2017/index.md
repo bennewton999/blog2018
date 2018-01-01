@@ -1,6 +1,5 @@
 ---
 title: "Let's Try This Again"
-cover: "/logos/code-bg.jpg"
 date: "11/20/2017"
 category: "tech"
 tags:
