@@ -4,7 +4,6 @@ import CardTitle from "react-md/lib/Cards/CardTitle";
 import CardText from "react-md/lib/Cards/CardText";
 import Link from "gatsby-link";
 import PostTags from "../PostTags/PostTags";
-import "./PostPreview.scss";
 
 class PostPreview extends Component {
   constructor(props) {
@@ -35,7 +34,7 @@ class PostPreview extends Component {
     const { mobile } = this.state;
     const expand = mobile;
     return (
-      <Card key={postInfo.path} raise className="md-grid md-cell md-cell--12">
+      <Card key={postInfo.path} raise className="md-grid md-cell md-cell--12" style={{borderRadius: '50px'}}>
         <Link style={{ textDecoration: "none" }} to={postInfo.path}>
           <CardTitle title={postInfo.title} />
         </Link>
