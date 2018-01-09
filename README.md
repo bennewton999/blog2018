@@ -1,6 +1,7 @@
-[![Code Climate](https://codeclimate.com/github/Vagr9K/gatsby-material-starter/badges/gpa.svg)](https://codeclimate.com/github/Vagr9K/gatsby-material-starter)
-[![Issue Count](https://codeclimate.com/github/Vagr9K/gatsby-material-starter/badges/issue_count.svg)](https://codeclimate.com/github/Vagr9K/gatsby-material-starter)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/990fb54ea8094f2aa0ed77f14e859820)](https://www.codacy.com/app/Vagr9K/gatsby-material-starter?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Vagr9K/gatsby-material-starter&amp;utm_campaign=Badge_Grade)
+Source for BenENewton.com - based on [Gatsby](https://github.com/gatsbyjs/gatsby/) and {Gatsby Material Starter](https://github.com/Vagr9K/gatsby-material-starter)
+
+---
+
 <div align="center">
     <img src="docs/logo.png" alt="Logo" width='200px' height='200px'/>
 </div>
