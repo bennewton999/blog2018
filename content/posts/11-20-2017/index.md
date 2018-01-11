@@ -1,7 +1,8 @@
 ---
 title: "Let's Try This Again"
-date: "11/20/2017"
+date: "2017-11-20"
 category: "tech"
+postType: "post"
 tags:
     - career
     - programming

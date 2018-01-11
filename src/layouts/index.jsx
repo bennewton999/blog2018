@@ -1,10 +1,12 @@
 import React from "react";
 import Helmet from "react-helmet";
 import "font-awesome/scss/font-awesome.scss";
-import Navigation from "../components/Navigation/Navigation";
+import Footer from "../components/Footer/Footer";
 import config from "../../data/SiteConfig";
 import "./index.scss";
 import "./global.scss";
+
+import "prismjs/themes/prism-twilight.css";
 
 export default class MainLayout extends React.Component {
   getLocalTitle() {
@@ -44,14 +46,17 @@ export default class MainLayout extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <Navigation config={config} LocalTitle={this.getLocalTitle()}>
-        <div>
-          <Helmet>
-            <meta name="description" content={config.siteDescription} />
-          </Helmet>
+      
+      <div>
+        <Helmet>
+          <meta name="description" content={config.siteDescription} />
+        </Helmet>
+        <div className="page-container">
           {children()}
+          <Footer />
         </div>
-      </Navigation>
+      </div>
+      
     );
   }
 }

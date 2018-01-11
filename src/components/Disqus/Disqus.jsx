@@ -35,7 +35,7 @@ class Disqus extends Component {
     const post = postNode.frontmatter;
     const url = config.siteUrl + config.pathPrefix + postNode.fields.slug;
     return (
-      <Card className="md-grid md-cell md-cell--12">
+      <Card className="md-grid md-cell md-cell--12" style={{borderRadius: '50px'}}>
         <CardTitle
           title="Comments"
           avatar={<Avatar icon={<FontIcon>comment</FontIcon>} />}

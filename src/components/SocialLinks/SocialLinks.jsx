@@ -7,7 +7,7 @@ class SocialLinks extends Component {
   render() {
     const { postNode, postPath, mobile } = this.props;
     const post = postNode.frontmatter;
-    const url = config.siteUrl + config.pathPrefix + postPath;
+    const url = config.siteUrl + postPath;
     const {
       FacebookShareButton,
       GooglePlusShareButton,
@@ -38,9 +38,9 @@ class SocialLinks extends Component {
           <RedditIcon round size={iconSize} />
           <RedditShareCount url={url}>
             {count =>
-              <div className="share-count">
+              (<div className="share-count">
                 {filter(count)}
-              </div>}
+              </div>)}
           </RedditShareCount>
         </RedditShareButton>
         <TwitterShareButton url={url} title={post.title}>
@@ -50,9 +50,9 @@ class SocialLinks extends Component {
           <GooglePlusIcon round size={iconSize} />
           <GooglePlusShareCount url={url}>
             {count =>
-              <div className="share-count">
+              (<div className="share-count">
                 {filter(count)}
-              </div>}
+              </div>)}
           </GooglePlusShareCount>
         </GooglePlusShareButton>
         <FacebookShareButton
@@ -64,9 +64,9 @@ class SocialLinks extends Component {
           <FacebookIcon round size={iconSize} />
           <FacebookShareCount url={url}>
             {count =>
-              <div className="share-count">
+              (<div className="share-count">
                 {filter(count)}
-              </div>}
+              </div>)}
           </FacebookShareCount>
         </FacebookShareButton>
         <LinkedinShareButton
@@ -77,9 +77,9 @@ class SocialLinks extends Component {
           <LinkedinIcon round size={iconSize} />
           <LinkedinShareCount url={url}>
             {count =>
-              <div className="share-count">
+              (<div className="share-count">
                 {filter(count)}
-              </div>}
+              </div>)}
           </LinkedinShareCount>
         </LinkedinShareButton>
         <TelegramShareButton url={url}>

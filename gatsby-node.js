@@ -2,9 +2,12 @@ const path = require("path");
 const _ = require("lodash");
 const webpackLodashPlugin = require("lodash-webpack-plugin");
 
-const postNodes = [];
+let postNodes = [];
 
 function addSiblingNodes(createNodeField) {
+  
+  postNodes = postNodes.filter(post => {  if (post.id.indexOf('/content/posts/') > 0) return post; });
+  
   postNodes.sort(
     ({ frontmatter: { date: date1 } }, { frontmatter: { date: date2 } }) =>
       new Date(date1) - new Date(date2)
@@ -80,6 +83,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
   return new Promise((resolve, reject) => {
     const postPage = path.resolve("src/templates/post.jsx");
+    const workPage = path.resolve("src/templates/work.jsx");
     const tagPage = path.resolve("src/templates/tag.jsx");
     const categoryPage = path.resolve("src/templates/category.jsx");
     resolve(
@@ -92,6 +96,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 frontmatter {
                   tags
                   category
+                  postType
                 }
                 fields {
                   slug
@@ -120,14 +125,23 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           if (edge.node.frontmatter.category) {
             categorySet.add(edge.node.frontmatter.category);
           }
-
-          createPage({
-            path: edge.node.fields.slug,
-            component: postPage,
-            context: {
-              slug: edge.node.fields.slug
-            }
-          });
+          if (edge.node.frontmatter.postType === 'work') {
+            createPage({
+              path: `/work${edge.node.fields.slug}`,
+              component: workPage,
+              context: {
+                slug: edge.node.fields.slug
+              }
+            });
+          } else { // blog post
+            createPage({
+              path: edge.node.fields.slug,
+              component: postPage,
+              context: {
+                slug: edge.node.fields.slug
+              }
+            });
+          }
         });
 
         const tagList = Array.from(tagSet);

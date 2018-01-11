@@ -1,11 +1,15 @@
 @import '../../layouts/theme.scss';
 
 .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     justify-content: center;
     align-content: center;
     background-color: $md-primary-color;
     padding: 10px 5px 5px;
-
+    
     .notice-container {
         display: flex;
         align-content: center;
@@ -28,34 +32,17 @@
             @media (max-width: 640px - 1px) {
                 display: none;
             }
-
-            flex: 1;
-            justify-content: center;
-        }
-
-        .based-on {
-            display: flex;
-
-            @media (max-width: 640px - 1px) {
-                display: none;
+            a .md-text--theme-secondary {
+            color: $md-tertiary-color;
             }
-
             flex: 1;
             justify-content: flex-end;
         }
 
         h4 {
-            color: $md-secondary-color;
+            color: $md-tertiary-color;
             text-align: center;
             margin: 0;
         }
     }
-}
-
-.footer-fixed {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 15;
 }

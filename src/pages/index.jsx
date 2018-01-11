@@ -1,19 +1,28 @@
 import React from "react";
 import Helmet from "react-helmet";
 import PostListing from "../components/PostListing/PostListing";
+import WorkGrid from "../components/WorkGrid/WorkGrid";
+import Hero from "../components/Hero/Hero";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 
+
 class Index extends React.Component {
   render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges;
+    const { edges } = this.props.data.allMarkdownRemark;
+    const postEdges = edges.filter(post => {  if (post.node.id.indexOf('/content/posts/') > 0) return post; });
+    const workEdges = edges.filter(post => {  if (post.node.id.indexOf('/content/work/') > 0) return post; });
     return (
-      <div className="index-container">
+      <div className="index-container" style={{paddingBottom: '98px'}}>
         <Helmet>
           <title>{config.siteTitle}</title>
           <link rel="canonical" href={`${config.siteUrl}`} />
         </Helmet>
         <SEO postEdges={postEdges} />
+        <Hero />
+        <h1 className="md-display-2 md-text-center">Recent Clients</h1>
+        <WorkGrid  workEdges={workEdges} />
+        <h1 className="md-display-2 md-text-center">My Blog</h1>
         <PostListing postEdges={postEdges} />
       </div>
     );
@@ -31,6 +40,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          id
           fields {
             slug
           }
@@ -38,8 +48,9 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
+            logo
+            logoWidth
             tags
-            cover
             date
           }
         }

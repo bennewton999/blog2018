@@ -27,9 +27,31 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "data",
+        path: `${__dirname}/content/${config.workDir}`
+      }
+    },
+    
+    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              // Class prefix for <pre> tags containing syntax highlighting;
+              // defaults to 'language-' (eg <pre class="language-js">).
+              // If your site loads Prism into the browser at runtime,
+              // (eg for use with libraries like react-live),
+              // you may use this to prevent Prism from re-processing syntax.
+              // This is an uncommon use-case though;
+              // If you're unsure, it's best to use the default value.
+              classPrefix: "language-",
+            },
+          },
+          `gatsby-remark-smartypants`,
           {
             resolve: "gatsby-remark-images",
             options: {
@@ -39,7 +61,6 @@ module.exports = {
           {
             resolve: "gatsby-remark-responsive-iframe"
           },
-          "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-autolink-headers"
         ]
@@ -131,7 +152,7 @@ module.exports = {
             {
               allMarkdownRemark(
                 limit: 1000,
-                sort: { order: DESC, fields: [frontmatter___date] },
+                sort: { order: ASC, fields: [frontmatter___date] },
               ) {
                 edges {
                   node {
@@ -141,7 +162,6 @@ module.exports = {
                     fields { slug }
                     frontmatter {
                       title
-                      cover
                       date
                       category
                       tags

@@ -1,7 +1,8 @@
 ---
 title: "Deploy your Gatsby.js Site to AWS S3"
-date: "11/24/2017"
+date: "2017-11-24"
 category: "tech"
+postType: "post"
 tags:
     - aws
     - programming

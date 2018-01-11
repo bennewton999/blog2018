@@ -8,6 +8,7 @@ import PostTags from "../components/PostTags/PostTags";
 import PostInfo from "../components/PostInfo/PostInfo";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import PostSuggestions from "../components/PostSuggestions/PostSuggestions";
+import Header from "../components/Header/Header";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
@@ -32,9 +33,10 @@ export default class PostTemplate extends React.Component {
 
   handleResize() {
     if (window.innerWidth >= 640) {
-      this.setState({ mobile: false });
+      setTimeout( () => this.setState({ mobile: false }), 250);
+      
     } else {
-      this.setState({ mobile: true });
+      setTimeout( () => this.setState({ mobile: true }), 250);
     }
   }
 
@@ -60,7 +62,8 @@ export default class PostTemplate extends React.Component {
         <div
           className={`md-grid md-cell--9 post-page-contents mobile-fix`}
         >
-          <Card className="md-grid md-cell md-cell--12 post">
+          <Header />
+          <Card className="md-grid md-cell md-cell--12 post" style={{borderRadius: '50px'}}>
             <CardText className="post-body">
               <h1 className="md-display-2 post-header">
                 {post.title}

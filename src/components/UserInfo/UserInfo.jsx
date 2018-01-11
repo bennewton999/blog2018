@@ -34,7 +34,7 @@ class UserInfo extends Component {
       return null;
     }
     return (
-      <Card className="md-grid md-cell md-cell--12 user-info">
+      <Card className="md-grid md-cell md-cell--12 user-info" style={{borderRadius: '50px'}}>
         <CardTitle
           expander={!expanded}
           avatar={userAvatar && <Avatar src={userAvatar} role="presentation" />}
@@ -42,9 +42,9 @@ class UserInfo extends Component {
           subtitle={
             userTwitter
               ? <Follow
-                  username={userTwitter}
-                  options={{ count: expanded ? "none" : "none" }}
-                />
+                username={userTwitter}
+                options={{ count: expanded ? "none" : "none" }}
+              />
               : "Author"
           }
         />
