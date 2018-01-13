@@ -13,7 +13,7 @@ So here's the obligatory "I'm starting my blog" post.  Only thing is, I sorta st
 I see it when I have to log in to Gravatar every few year and it's quite embarrassing.
 I always had good intentions.
 
-### A New Beginning
+## A New Beginning
 
 So this is it, a new beginning.  I hope to write about, in no particular order,
 
@@ -22,4 +22,4 @@ So this is it, a new beginning.  I hope to write about, in no particular order,
 * The long and unusual path I took to get where I am now
 * And travel (how cliché)
 
-Yes, if I could, I'd start fresh as a stravel blogger.  Let's see where that ends up.
+Yes, if I could, I'd start fresh as a travel blogger.  Let's see where that ends up.
