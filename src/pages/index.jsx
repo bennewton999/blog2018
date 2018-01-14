@@ -22,7 +22,7 @@ class Index extends React.Component {
         <Hero />
         <h1 className="md-display-2 md-text-center">Recent Clients</h1>
         <WorkGrid  workEdges={workEdges} />
-        <h1 className="md-display-2 md-text-center">My Blog</h1>
+        <h1 className="md-display-2 md-text-center">Recent Posts</h1>
         <PostListing postEdges={postEdges} />
       </div>
     );
