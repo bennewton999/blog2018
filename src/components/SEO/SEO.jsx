@@ -15,8 +15,8 @@ class SEO extends Component {
       description = postMeta.description
         ? postMeta.description
         : postNode.excerpt;
-      image = postMeta.cover;
-      postURL = config.siteUrl + config.pathPrefix + postPath;
+      image = config.siteLogo; // postMeta.cover;
+      postURL = config.siteUrl + postPath;
     } else {
       title = config.siteTitle;
       description = config.siteDescription;
