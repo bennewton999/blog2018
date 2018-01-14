@@ -6,7 +6,7 @@ module.exports = {
   siteLogo: "/logos/ben.png", // Logo used for SEO and manifest.
   siteUrl: "https://benenewton.com", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
-  siteDescription: "Ben Newton - Full Stack Developer", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "Ben Newton - Full Stack JavaScript Developer", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
   siteGATrackingID: "UA-5757336-7", // Tracking code ID for google analytics.
@@ -16,8 +16,7 @@ module.exports = {
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "South Florida", // User location to display in the author segment.
   userAvatar: "/logos/ben.png", // User avatar to display in the author segment.
-  userDescription:
-    "I have been building interactive websites for more than 20 years. I have architected and built, from the ground up, web applications that have run warehouse operations and business operations for a large multimillion dollar distribution business for over 12 years. I've built full featured e-commerce sites for both B2B and B2C businesses. More recently, I have specialized in building and leading teams developing high traffic, consumer facing websites for major cruise lines, rental car companies, resorts, airlines and major retailers.", // User description to display in the author segment.
+  userDescription: "I have been building interactive websites for more than 20 years. I have architected and built, from the ground up, web applications that have run warehouse operations and business operations for a large multimillion dollar distribution business for over 12 years. I've built full featured e-commerce sites for both B2B and B2C businesses. More recently, I have specialized in building and leading teams developing high traffic, consumer facing websites for major cruise lines, rental car companies, resorts, airlines and major retailers.", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
       {
