@@ -33,7 +33,7 @@ class About extends Component {
                 {config.userDescription}
               </p>
             </CardText>
-            <UserLinks labeled config={config} />
+            <UserLinks contactMe config={config} />
           </div>
         </Card>
       </div>

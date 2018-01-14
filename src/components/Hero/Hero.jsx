@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Link from "gatsby-link";
 import Overdrive from "react-overdrive";
 import config from "../../../data/SiteConfig";
+import UserLinks from "../UserLinks/UserLinks";
 import "./Hero.scss";
 
 class Hero extends Component {
@@ -19,7 +20,7 @@ class Hero extends Component {
         </Link>
         <h1 className="my-name">Ben Newton</h1>
         <h2>Full Stack JavaScript Developer at <a href="http://sapientrazorfish.com/">SR<span className="sr">_</span></a></h2>
-        <a className="get-in-touch" href="https://blulyne.wufoo.com/forms/want-to-get-in-touch/" target="_blank">Get in touch</a>
+        <UserLinks contactMe config={config} />
       </div>
     );
   }
