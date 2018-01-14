@@ -35,6 +35,11 @@ module.exports = {
         iconClassName: "fa fa-linkedin"
       },
       {
+        label: "GitHub",
+        url: "https://github.com/bennewton999",
+        iconClassName: "fa fa-github"
+      },
+      {
         label: "Email",
         url: "mailto:bennewton999@gmail.com",
         iconClassName: "fa fa-envelope"
