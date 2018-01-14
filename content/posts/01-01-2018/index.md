@@ -6,9 +6,10 @@ postType: "post"
 tags:
     - programming
     - gatsby
+    - graphql
 ---
 
-I only recently started using [Gatsby](https://www.gatsbyjs.org/) for my website and as is usually the case, I immediately wanted to make modifications.  I used [Gatsby Material Starter](https://github.com/Vagr9K/gatsby-material-starter) as my starter site and it includes a folder where you can store markdown files for your blog posts, but I needed to showcase my work as well, as that's the main purpose of my site. I could have just kept the static HTML of my recent clients from my old site, cut and paste it into the home page template and been done, but since I wanted to learn more about Gatsby and I thought it would make a good post.  So I'll take you through the steps I did to add the second post type to my site.  Here we go..
+I only recently started using [Gatsby](https://www.gatsbyjs.org/) for my website and as is usually the case, I immediately wanted to make modifications.  I used [Gatsby Material Starter](https://github.com/Vagr9K/gatsby-material-starter) as my starter site and it includes a folder where you can store markdown files for your blog posts, but I needed to showcase my work as well, as that's the main purpose of my site. I could have just kept the static HTML of my recent clients from my old site, cut and paste it into the home page template and been done, but since I wanted to learn more about Gatsby and I thought it would make a good post, I figured out how to add a new post type.  I'm just a couple of weeks into working with [Gatsby](https://www.gatsbyjs.org/), so this may not be the best way, it's just how I did it.  So I'll take you through the steps I did to add the second post type to my site. If you see something I could do differently or betrer, let me know in the comments.  Here we go..
 
 ## Add Another Data Source
 
@@ -79,4 +80,4 @@ The starter already traversed a list of posts, so I added a new component that w
 
 ## That's It!
 
-So that's it, I now have my work available on my site again as well as a nice set up for adding more info and new work as necessary by adding more markdown files.  I'm literally just a couple of weeks into working with [Gatsby](https://www.gatsbyjs.org/). I typically don't read the docs until I need to, so if you see something I'm doing and you don't agree, please let me know in the comments. I'm sure there's more than one way to do this and I'd love to hear what you think.  I'm sharing this because I couldn't find a good post when I looked for one myself to work from.
+So that's it, I now have my work available on my site again as well as a nice set up for adding more info and new work as necessary by adding more markdown files.  Again, I'm just a couple of weeks into working with [Gatsby](https://www.gatsbyjs.org/). I typically don't read the docs until I need to, so if you see something I'm doing and you don't agree, please let me know in the comments. I'm sure there's more than one way to do this and I'd love to hear what you think.  I'm sharing this because I couldn't find a good post when I looked for one myself to work from.
