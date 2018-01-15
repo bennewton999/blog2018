@@ -80,7 +80,7 @@
     "deploy": "gatsby build --prefix-paths && s3-deploy './public/**' --cwd './public/' --bucket benenewton.com --deleteRemoved --gzip && npm run clear",
     "clear": "aws-cloudfront-invalidate E2EGPLKUE6UEOR",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run --record"
+    "cypress:run": "cypress run --record --key 501a8584-9e09-4347-8deb-ed66f95cd5bf"
   },
   "remarkConfig": {
     "plugins": [
