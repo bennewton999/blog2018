@@ -5,7 +5,7 @@ node_js:
 cache: yarn
 notifications:
   email:
-    on_success: change # only if status change from fail to success
+    on_success: always # change # only if status change from fail to success
     on_failure: always # if there is a fail
     recipients:
       - bennewton999@gmail.com
@@ -19,5 +19,7 @@ before_script:
   # - "yarn global add https://github.com/firebase/firebase-tools"
   # - "yarn global add firebase-tools"
   # - "yarn global add gatsby --ignore-engines"
+  - "yarn run serve &""
 script:
+  - "yarn cypress:run"
   - "yarn deploy"

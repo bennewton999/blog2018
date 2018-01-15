@@ -43,9 +43,11 @@
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",
+    "cypress": "^1.4.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.2",
     "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-cypress": "^2.0.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
@@ -76,7 +78,9 @@
     "write-good": "write-good $(glob 'content/posts/**/*.md')",
     "format:js": "prettier '**/*.{js,jsx}' --write",
     "deploy": "gatsby build --prefix-paths && s3-deploy './public/**' --cwd './public/' --bucket benenewton.com --deleteRemoved --gzip && npm run clear",
-    "clear": "aws-cloudfront-invalidate E2EGPLKUE6UEOR"
+    "clear": "aws-cloudfront-invalidate E2EGPLKUE6UEOR",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "remarkConfig": {
     "plugins": [
