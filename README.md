@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bennewton999/blog2018.svg?branch=master)](https://travis-ci.org/bennewton999/blog2018)
+
 Source for BenENewton.com - based on [Gatsby](https://github.com/gatsbyjs/gatsby/) and {Gatsby Material Starter](https://github.com/Vagr9K/gatsby-material-starter)
 
 ---
