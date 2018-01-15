@@ -1,23 +1,29 @@
 ---
-sudo: required
-dist: trusty
 language: node_js
 node_js:
-  # LTS version
-  - "8.0"
+  - "8"
+cache: yarn
+addons:
+  apt:
+    packages:
+      - g++-4.8
+    sources:
+      - ubuntu-toolchain-r-test
+env:
+  CXX=g++-4.8
 notifications:
   email:
     on_success: change # only if status change from fail to success
     on_failure: always # if there is a fail
     recipients:
       - bennewton999@gmail.com
-install:
-  - npm install
+branches:
+  only:
+    - master
 before_script:
-  - export CI=false
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: npm run deploy
-  on:
-    branch: ["master"]
+  # If you're have troubles with firebase/firebase-tools#382
+  # - "yarn global add https://github.com/firebase/firebase-tools"
+  # - "yarn global add firebase-tools"
+  - "yarn global add gatsby"
+script:
+  - "yarn deploy"
