@@ -19,7 +19,7 @@ before_script:
   # - "yarn global add https://github.com/firebase/firebase-tools"
   # - "yarn global add firebase-tools"
   # - "yarn global add gatsby --ignore-engines"
-  - "yarn run serve &""
+  - "yarn run serve &"
 script:
   - "yarn cypress:run"
   - "yarn deploy"
