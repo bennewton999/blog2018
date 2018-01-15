@@ -20,6 +20,8 @@ notifications:
 branches:
   only:
     - master
+before_install:
+    - yarn config set ignore-engines true
 before_script:
   # If you're have troubles with firebase/firebase-tools#382
   # - "yarn global add https://github.com/firebase/firebase-tools"
