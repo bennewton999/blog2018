@@ -5,10 +5,10 @@ import UserLinks from "../UserLinks/UserLinks";
 import config from "../../../data/SiteConfig";
 import "./Footer.scss";
 
-const Footer = () => {
+const Footer = (props) => {
   
   const url = config.siteRss;
-  const { userLinks } = this.props;
+  const { userLinks } = props;
   const copyright = config.copyright;
   if (!copyright) {
     return null;
