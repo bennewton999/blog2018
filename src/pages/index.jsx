@@ -10,8 +10,8 @@ import config from "../../data/SiteConfig";
 class Index extends React.Component {
   render() {
     const { edges } = this.props.data.allMarkdownRemark;
-    const postEdges = edges.filter(post => {  if (post.node.id.indexOf('/content/posts/') > 0) return post; });
-    const workEdges = edges.filter(post => {  if (post.node.id.indexOf('/content/work/') > 0) return post; });
+    const postEdges = edges.filter(post => { if (post.node.id.indexOf('/content/posts/') > 0) return post; });
+    const workEdges = edges.filter(post => { if (post.node.id.indexOf('/content/work/') > 0) return post; });
     return (
       <div className="index-container" style={{paddingBottom: '98px'}}>
         <Helmet>
