@@ -1,12 +1,11 @@
 import React from "react";
 import Helmet from "react-helmet";
+import "prismjs/themes/prism-twilight.css";
 import "font-awesome/scss/font-awesome.scss";
 import Footer from "../components/Footer/Footer";
 import config from "../../data/SiteConfig";
 import "./index.scss";
 import "./global.scss";
-
-import "prismjs/themes/prism-twilight.css";
 
 export default class MainLayout extends React.Component {
   getLocalTitle() {
