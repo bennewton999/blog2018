@@ -19,6 +19,7 @@ before_script:
   # - "yarn global add https://github.com/firebase/firebase-tools"
   # - "yarn global add firebase-tools"
   # - "yarn global add gatsby --ignore-engines"
+  - "yarn run lint:js"
   - "yarn run build"
   - "yarn run serve &"
 script:
