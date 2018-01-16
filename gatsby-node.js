@@ -1,3 +1,5 @@
+/* eslint consistent-return: 0, array-callback-return: 0 */ 
+
 const path = require("path");
 const _ = require("lodash");
 const webpackLodashPlugin = require("lodash-webpack-plugin");
