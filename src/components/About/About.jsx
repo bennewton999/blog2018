@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Card from "react-md/lib/Cards/Card";
 import CardText from "react-md/lib/Cards/CardText";
-import UserLinks from "../UserLinks/UserLinks";
-import Overdrive from "react-overdrive";
 import { TweenMax } from "gsap";
+import Overdrive from "react-overdrive";
+import UserLinks from "../UserLinks/UserLinks";
 import config from "../../../data/SiteConfig";
 import "./About.scss";
 

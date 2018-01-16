@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Button from "react-md/lib/Buttons";
 import Link from "gatsby-link";
 import UserLinks from "../UserLinks/UserLinks";
