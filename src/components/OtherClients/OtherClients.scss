@@ -1,22 +1,18 @@
 .logos {
   display: flex;
-  flex-flow: wrap; 
+  flex-flow: wrap;
   justify-content: space-around;
   padding: 0;
   width: 100%;
   margin-bottom: 3em;
-  a {
-    flex: 33%;
+  .logo-container {
+    flex: 20%;
     @media (max-width: 768px) {
-      flex: 45%;
+      flex: 20%;
     }
 
     @media (max-width: 640px) {
       flex: 45%;
     }
-  }
-
-  & .taco-bell {
-    background-size: 47%;
   }
 }

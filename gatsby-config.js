@@ -33,6 +33,13 @@ module.exports = {
         path: `${__dirname}/content/${config.workDir}`
       }
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "otherClients",
+        path: `${__dirname}/content/${config.otherClientsDir}`
+      }
+    },
     
     {
       resolve: "gatsby-transformer-remark",

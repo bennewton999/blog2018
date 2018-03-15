@@ -1,6 +1,7 @@
 module.exports = {
   blogPostDir: "posts", // The name of directory that contains your posts.
   workDir: "work", // The name of directory that contains your work.
+  otherClientsDir: "old-clients",
   siteTitle: "Ben Newton", // Site title.
   siteTitleAlt: "Ben Newton", // Alternative site title for SEO.
   siteLogo: "/logos/ben.png", // Logo used for SEO and manifest.

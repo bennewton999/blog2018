@@ -15,7 +15,7 @@ class WorkLogo extends Component {
               backgroundImage: `url(${workInfo.logo})`,
               backgroundSize: workInfo.logoWidth || '80%'
             }}
-            className="logo md-paper--1"
+            className="logo"
           />
         </div>
       </Overdrive>
