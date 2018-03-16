@@ -17,6 +17,10 @@
   border: 2px solid #ededed;
   padding: 1em;
   background-color: #fff;
+  transition: 250ms;
+  &:hover {
+    transform: scale(1.2)
+  }
 }
 
 .my-name {
