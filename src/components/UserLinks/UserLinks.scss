@@ -4,4 +4,14 @@
     justify-content: center;
     align-items: center;
     max-width: 100%;
+    .md-btn {
+        .md-icon {
+            transition: 150ms;
+        }
+        &:hover {
+            .md-icon {
+                transform: scale(1.1);
+            }
+        }
+    }
 }
