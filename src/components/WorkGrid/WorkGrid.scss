@@ -7,12 +7,12 @@
   margin-bottom: 3em;
   a {
     flex: 33%;
-    @media (max-width: 768px) {
-      flex: 45%;
-    }
+    // @media (max-width: 768px) {
+    //   flex: 33%;
+    // }
 
-    @media (max-width: 640px) {
-      flex: 45%;
+    @media (max-width: 460px) {
+      flex: 100%;
     }
   }
 
