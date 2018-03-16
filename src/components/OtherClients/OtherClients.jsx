@@ -5,16 +5,7 @@ import "./OtherClients.scss";
 class OtherClients extends Component {
   
   getWorkList() {
-    const workList = [];
-    this.props.workEdges.forEach(workEdge => {
-      workList.push({
-        title: workEdge.node.frontmatter.title,
-        logo: workEdge.node.frontmatter.logo,
-        logoWidth: workEdge.node.frontmatter.logoWidth,
-        excerpt: workEdge.node.excerpt,
-        slug: workEdge.node.fields.slug
-      });
-    });
+    const workList = this.props.workEdges.map(workEdge => workEdge.node.frontmatter);
     return workList;
   }
 
@@ -25,7 +16,7 @@ class OtherClients extends Component {
         <div className="md-grid md-cell--8 mobile-fix">
           <div className="logos">
             {workList.map(work => (
-              <div className="logo-container">
+              <div key={work.title} className="logo-container">
                 <WorkLogo workInfo={work} />
               </div>
             ))}
