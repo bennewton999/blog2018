@@ -24,4 +24,4 @@ before_script:
   - "yarn run serve &"
 script:
   - "yarn cypress:run"
-  - "yarn deploy"
+#  - "yarn deploy"
