@@ -6,7 +6,16 @@ import "./WorkGrid.scss";
 class WorkGrid extends Component {
   
   getWorkList() {
-    const workList = this.props.workEdges.map(workEdge => workEdge.node.frontmatter);
+    const workList = [];
+    this.props.workEdges.forEach(workEdge => {
+      workList.push({
+        title: workEdge.node.frontmatter.title,
+        logo: workEdge.node.frontmatter.logo,
+        logoWidth: workEdge.node.frontmatter.logoWidth,
+        excerpt: workEdge.node.excerpt,
+        slug: workEdge.node.fields.slug
+      });
+    });
     return workList;
   }
 
