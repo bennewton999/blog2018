@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Avatar, Button, List, ListItem, CardActions } from "react-md";
+import { Avatar, List, ListItem } from "react-md";
 
 import Card from "react-md/lib/Cards/Card";
 import CardText from "react-md/lib/Cards/CardText";
