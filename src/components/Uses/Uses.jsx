@@ -40,9 +40,7 @@ class About extends Component {
                 alt={config.userName}
               />
             </Overdrive>
-            <h1 ref={r => (this._inputRef = r)} className="my-name">
-              What I Use
-            </h1>
+            <h1 className="my-name">What I Use</h1>
 
             <CardText style={{ width: "90%" }}>
               <CardTitle title="Editors" />
@@ -117,9 +115,7 @@ class About extends Component {
                     primaryText="Cobalt 2 Theme"
                   />
                 </a>
-                <CardText>
-                  {`My current theme from Wes Bos.`}
-                </CardText>
+                <CardText>My current theme from Wes Bos.</CardText>
                 <a
                   href="https://marketplace.visualstudio.com/items?itemName=ericadamski.carbon-now-sh"
                   target="_blank"
@@ -131,7 +127,8 @@ class About extends Component {
                   />
                 </a>
                 <CardText>
-                  {`Opens the current editor content in carbon.now.sh and share beautiful images of your source code.`}
+                  Opens the current editor content in carbon.now.sh and share
+                  beautiful images of your source code.
                 </CardText>
                 <a
                   href="http://gitlens.amod.io/"
@@ -144,7 +141,8 @@ class About extends Component {
                   />
                 </a>
                 <CardText>
-                  {`I mainly use Git Lens for the git blame feature, but it has a number of git enhancements for VSCode.`}
+                  I mainly use Git Lens for the git blame feature, but it has a
+                  number of git enhancements for VSCode.
                 </CardText>
                 <a
                   href="https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets"
@@ -157,7 +155,7 @@ class About extends Component {
                   />
                 </a>
                 <CardText>
-                  {`Easy traversing of bracketed data in the editor.`}
+                  Easy traversing of bracketed data in the editor.
                 </CardText>
               </List>
 
