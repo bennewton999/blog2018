@@ -12,7 +12,7 @@ describe("Home Page Test", () => {
 
 describe("Uses Page Test", () => {
   it("Successfully loads", () => {
-    cy.visit("/uses");
+    cy.visit("http://localhost:9000/uses");
     cy.screenshot();
 
     cy.get(".my-name").should("contain", "What I Use");
