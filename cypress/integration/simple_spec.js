@@ -12,7 +12,7 @@
 
 describe("Uses Page Test", () => {
   it("Successfully loads", () => {
-    cy.visit("/uses");
+    cy.visit("http://benenewton.com/uses");
     cy.screenshot();
 
     cy.get(".my-name").should("contain", "What I Use");

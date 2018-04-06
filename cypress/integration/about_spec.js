@@ -1,6 +1,6 @@
 describe("Home Page Test", () => {
   it("Successfully loads", () => {
-    cy.visit("/");
+    cy.visit("http://benenewton.com/");
     cy.screenshot();
 
     cy.get(".my-name").should("contain", "Ben Newton");
