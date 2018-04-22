@@ -172,7 +172,7 @@ class About extends Component {
                   />
                 </a>
                 <CardText>
-                  {`My personal computer is a MacBook Pro (13-inch, 2016, Touch Strip).  I'm pretty happy with it.  I use my work Laptop for any heavy lifting.`}
+                  {`My personal computer is a MacBook Pro (13-inch, 2016, Touch Bar).  I'm pretty happy with it.  I use my work Laptop for any heavy lifting.`}
                 </CardText>
 
                 <a
