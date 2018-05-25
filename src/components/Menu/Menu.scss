@@ -1,0 +1,11 @@
+.menu {
+  margin-top: 3rem;
+  a {
+    color: #000;
+    display: block;
+    font-size: 2rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

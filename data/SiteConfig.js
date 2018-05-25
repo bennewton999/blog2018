@@ -17,34 +17,35 @@ module.exports = {
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "South Florida", // User location to display in the author segment.
   userAvatar: "/logos/ben.png", // User avatar to display in the author segment.
-  userDescription: "I have been building interactive websites for more than 20 years. I have architected and built, from the ground up, web applications that have run warehouse operations and business operations for a large multimillion dollar distribution business for over 12 years. I've built full featured e-commerce sites for both B2B and B2C businesses. More recently, I have specialized in building and leading teams developing high traffic, consumer facing websites for major cruise lines, rental car companies, resorts, airlines and major retailers.", // User description to display in the author segment.
+  userDescription:
+    "I have been building interactive websites for more than 20 years. I have architected and built, from the ground up, web applications that have run warehouse operations and business operations for a large multimillion dollar distribution business for over 12 years. I've built full featured e-commerce sites for both B2B and B2C businesses. More recently, I have specialized in building and leading teams developing high traffic, consumer facing websites for major cruise lines, rental car companies, resorts, airlines and major retailers.", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
-      {
-        label: "Instagram",
-        url: "https://instagram.com/bennewton999",
-        iconClassName: "fa fa-instagram"
-      },
-      {
-        label: "Twitter",
-        url: "https://twitter.com/BenENewton",
-        iconClassName: "fa fa-twitter"
-      },
-      {
-        label: "LinkedIn",
-        url: "https://www.linkedin.com/in/bennewton/",
-        iconClassName: "fa fa-linkedin"
-      },
-      {
-        label: "GitHub",
-        url: "https://github.com/bennewton999",
-        iconClassName: "fa fa-github"
-      },
-      {
-        label: "Email",
-        url: "mailto:bennewton999@gmail.com",
-        iconClassName: "fa fa-envelope"
-      }
+    {
+      label: "Instagram",
+      url: "https://instagram.com/bennewton999",
+      iconClassName: "fa fa-instagram"
+    },
+    {
+      label: "Twitter",
+      url: "https://twitter.com/BenENewton",
+      iconClassName: "fa fa-twitter"
+    },
+    {
+      label: "LinkedIn",
+      url: "https://www.linkedin.com/in/bennewton/",
+      iconClassName: "fa fa-linkedin"
+    },
+    {
+      label: "GitHub",
+      url: "https://github.com/bennewton999",
+      iconClassName: "fa fa-github"
+    },
+    {
+      label: "Email",
+      url: "mailto:bennewton999@gmail.com",
+      iconClassName: "fa fa-envelope"
+    }
   ],
   copyright: "Copyright © 2018. Ben Newton" // Copyright string for the footer of the website and RSS feed.
 };
