@@ -20,6 +20,8 @@ import rainbowBracketsIcon from "../../images/rainbowBrackets-icon.png";
 import gitLensIcon from "../../images/gitlens-icon.png";
 import codeSyncIcon from "../../images/code-settings-sync-icon.png";
 import appleIcon from "../../images/apple-icon.png";
+import colorHighlightIcon from "../../images/color-highlight-icon.png";
+import debuggerForChromeIcon from "../../images/debugger-for-chrome-icon.png";
 
 class About extends Component {
   componentDidMount() {
@@ -156,6 +158,33 @@ class About extends Component {
                 </a>
                 <CardText>
                   Easy traversing of bracketed data in the editor.
+                </CardText>
+                <a
+                  href="https://github.com/sergiirocks/vscode-ext-color-highlight"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ListItem
+                    leftAvatar={<Avatar src={colorHighlightIcon} />}
+                    primaryText="Color Highlight"
+                  />
+                </a>
+                <CardText>
+                  Adds colored border around css/web colors in the editor.
+                </CardText>
+                <a
+                  href="https://github.com/sergiirocks/vscode-ext-color-highlight"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ListItem
+                    leftAvatar={<Avatar src={debuggerForChromeIcon} />}
+                    primaryText="Debugger for Chrome"
+                  />
+                </a>
+                <CardText>
+                  Debug your JavaScript code running in Google Chrome from VS
+                  Code.
                 </CardText>
               </List>
 
