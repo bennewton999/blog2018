@@ -22,6 +22,8 @@ import codeSyncIcon from "../../images/code-settings-sync-icon.png";
 import appleIcon from "../../images/apple-icon.png";
 import colorHighlightIcon from "../../images/color-highlight-icon.png";
 import debuggerForChromeIcon from "../../images/debugger-for-chrome-icon.png";
+import editorConfigIcon from "../../images/editor-config-icon.png";
+import eslintIcon from "../../images/eslint-icon.png";
 
 class About extends Component {
   componentDidMount() {
@@ -185,6 +187,35 @@ class About extends Component {
                 <CardText>
                   Debug your JavaScript code running in Google Chrome from VS
                   Code.
+                </CardText>
+                <a
+                  href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ListItem
+                    leftAvatar={<Avatar src={editorConfigIcon} />}
+                    primaryText="EditorConfig"
+                  />
+                </a>
+                <CardText>
+                  This plugin attempts to override user/workspace settings with
+                  settings found in .editorconfig files.
+                </CardText>
+                <a
+                  href="https://github.com/Microsoft/vscode-eslint"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ListItem
+                    leftAvatar={<Avatar src={eslintIcon} />}
+                    primaryText="Eslint"
+                  />
+                </a>
+                <CardText>
+                  {`The extension uses the ESLint library installed in the opened
+                  workspace folder. If the folder doesn't provide one the
+                  extension looks for a global install version.`}
                 </CardText>
               </List>
 
