@@ -5,6 +5,7 @@ import { Avatar, List, ListItem } from "react-md";
 import Card from "react-md/lib/Cards/Card";
 import CardText from "react-md/lib/Cards/CardText";
 import CardTitle from "react-md/lib/Cards/CardTitle";
+import Link from "gatsby-link";
 import { TweenMax } from "gsap";
 import Overdrive from "react-overdrive";
 import UserLinks from "../UserLinks/UserLinks";
@@ -37,13 +38,15 @@ class About extends Component {
       <div className="about-container md-grid mobile-fix">
         <Card className="md-grid md-cell--8" style={{ borderRadius: "50px" }}>
           <div className="about-wrapper">
-            <Overdrive id="me">
-              <img
-                src={config.userAvatar}
-                className="about-img"
-                alt={config.userName}
-              />
-            </Overdrive>
+            <Link to="/">
+              <Overdrive id="me">
+                <img
+                  src={config.userAvatar}
+                  className="about-img"
+                  alt={config.userName}
+                />
+              </Overdrive>
+            </Link>
             <h1 className="my-name">What I Use</h1>
 
             <CardText style={{ width: "90%" }}>

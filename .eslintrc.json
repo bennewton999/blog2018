@@ -5,7 +5,8 @@
     "react/prefer-stateless-function": "off",
     "react/prop-types": "off",
     "react/no-danger": "off",
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "no-return-assign": "off"
   },
   "settings": {
     "import/core-modules": []
