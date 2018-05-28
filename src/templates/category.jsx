@@ -10,8 +10,13 @@ export default class CategoryTemplate extends React.Component {
     return (
       <div className="category-container">
         <Helmet>
-          <title>{`Posts in category "${category}" | ${config.siteTitle}`}</title>
-          <link rel="canonical" href={`${config.siteUrl}/categories/${category}`} />
+          <title>{`Posts in category "${category}" | ${
+            config.siteTitle
+          }`}</title>
+          <link
+            rel="canonical"
+            href={`${config.siteUrl}/categories/${category}`}
+          />
         </Helmet>
         <PostListing postEdges={postEdges} />
       </div>
@@ -19,7 +24,7 @@ export default class CategoryTemplate extends React.Component {
   }
 }
 
-/* eslint no-undef: "off"*/
+/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query CategoryPage($category: String) {
     allMarkdownRemark(
