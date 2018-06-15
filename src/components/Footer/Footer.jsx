@@ -6,7 +6,7 @@ import config from "../../../data/SiteConfig";
 import "./Footer.scss";
 
 const Footer = (props) => {
-  
+
   const url = config.siteRss;
   const { userLinks } = props;
   const copyright = config.copyright;
@@ -24,7 +24,7 @@ const Footer = (props) => {
         </div>
         <div className="rss">
           <Link to={url}>
-            <Button flat secondary iconClassName="fa fa-rss" />
+            <Button icon secondary iconClassName="fa fa-rss" />
           </Link>
         </div>
       </div>
