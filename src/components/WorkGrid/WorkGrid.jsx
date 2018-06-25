@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import Link from "gatsby-link";
-import WorkLogo from "../WorkLogo/WorkLogo"
-import "./WorkGrid.scss";
+import React, { Component } from 'react';
+import Link from 'gatsby-link';
+import WorkLogo from '../WorkLogo/WorkLogo'
+import './WorkGrid.scss';
 
 class WorkGrid extends Component {
   

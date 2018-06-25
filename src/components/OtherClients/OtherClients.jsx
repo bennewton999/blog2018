@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import WorkLogo from "../WorkLogo/WorkLogo"
-import "./OtherClients.scss";
+import React, { Component } from 'react';
+import WorkLogo from '../WorkLogo/WorkLogo'
+import './OtherClients.scss';
 
 class OtherClients extends Component {
   

@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { ShareButtons, ShareCounts, generateShareIcon } from "react-share";
-import config from "../../../data/SiteConfig";
-import "./SocialLinks.scss";
+import React, { Component } from 'react';
+import { ShareButtons, ShareCounts, generateShareIcon } from 'react-share';
+import config from '../../../data/SiteConfig';
+import './SocialLinks.scss';
 
 class SocialLinks extends Component {
   render() {
@@ -23,14 +23,14 @@ class SocialLinks extends Component {
       RedditShareCount
     } = ShareCounts;
 
-    const FacebookIcon = generateShareIcon("facebook");
-    const TwitterIcon = generateShareIcon("twitter");
-    const TelegramIcon = generateShareIcon("telegram");
-    const GooglePlusIcon = generateShareIcon("google");
-    const LinkedinIcon = generateShareIcon("linkedin");
-    const RedditIcon = generateShareIcon("reddit");
+    const FacebookIcon = generateShareIcon('facebook');
+    const TwitterIcon = generateShareIcon('twitter');
+    const TelegramIcon = generateShareIcon('telegram');
+    const GooglePlusIcon = generateShareIcon('google');
+    const LinkedinIcon = generateShareIcon('linkedin');
+    const RedditIcon = generateShareIcon('reddit');
     const iconSize = mobile ? 36 : 48;
-    const filter = count => (count > 0 ? count : "");
+    const filter = count => (count > 0 ? count : '');
 
     return (
       <div className="social-links">

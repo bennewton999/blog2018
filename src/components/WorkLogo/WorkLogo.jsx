@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Overdrive from "react-overdrive"
-import "./WorkLogo.scss";
+import React, { Component } from 'react';
+import Overdrive from 'react-overdrive'
+import './WorkLogo.scss';
 
 class WorkLogo extends Component {
   

@@ -1,18 +1,18 @@
-import React from "react";
-import Helmet from "react-helmet";
-import Card from "react-md/lib/Cards";
-import CardText from "react-md/lib/Cards/CardText";
-import UserInfo from "../components/UserInfo/UserInfo";
-import Disqus from "../components/Disqus/Disqus";
-import PostTags from "../components/PostTags/PostTags";
-import PostInfo from "../components/PostInfo/PostInfo";
-import SocialLinks from "../components/SocialLinks/SocialLinks";
-import PostSuggestions from "../components/PostSuggestions/PostSuggestions";
-import Header from "../components/Header/Header";
-import SEO from "../components/SEO/SEO";
-import config from "../../data/SiteConfig";
-import "./b16-tomorrow-dark.css";
-import "./post.scss";
+import React from 'react';
+import Helmet from 'react-helmet';
+import Card from 'react-md/lib/Cards';
+import CardText from 'react-md/lib/Cards/CardText';
+import UserInfo from '../components/UserInfo/UserInfo';
+import Disqus from '../components/Disqus/Disqus';
+import PostTags from '../components/PostTags/PostTags';
+import PostInfo from '../components/PostInfo/PostInfo';
+import SocialLinks from '../components/SocialLinks/SocialLinks';
+import PostSuggestions from '../components/PostSuggestions/PostSuggestions';
+import Header from '../components/Header/Header';
+import SEO from '../components/SEO/SEO';
+import config from '../../data/SiteConfig';
+import './b16-tomorrow-dark.css';
+import './post.scss';
 
 export default class PostTemplate extends React.Component {
   constructor(props) {
@@ -24,11 +24,11 @@ export default class PostTemplate extends React.Component {
   }
   componentDidMount() {
     this.handleResize();
-    window.addEventListener("resize", this.handleResize);
+    window.addEventListener('resize', this.handleResize);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.handleResize);
+    window.removeEventListener('resize', this.handleResize);
   }
 
   handleResize() {
@@ -62,7 +62,7 @@ export default class PostTemplate extends React.Component {
           <Header />
           <Card
             className="md-grid md-cell md-cell--12 post"
-            style={{ borderRadius: "50px" }}
+            style={{ borderRadius: '50px' }}
           >
             <CardText className="post-body">
               <h1 className="md-display-2 post-header">{post.title}</h1>

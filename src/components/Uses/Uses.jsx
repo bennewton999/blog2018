@@ -1,22 +1,22 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import { Avatar, List, ListItem } from "react-md";
+import { Avatar, List, ListItem } from 'react-md';
 
-import Card from "react-md/lib/Cards/Card";
-import CardText from "react-md/lib/Cards/CardText";
-import CardTitle from "react-md/lib/Cards/CardTitle";
-import Link from "gatsby-link";
-import { TweenMax } from "gsap";
-import Overdrive from "react-overdrive";
-import UserLinks from "../UserLinks/UserLinks";
-import config from "../../../data/SiteConfig";
-import "./Uses.scss";
+import Card from 'react-md/lib/Cards/Card';
+import CardText from 'react-md/lib/Cards/CardText';
+import CardTitle from 'react-md/lib/Cards/CardTitle';
+import Link from 'gatsby-link';
+import { TweenMax } from 'gsap';
+import Overdrive from 'react-overdrive';
+import UserLinks from '../UserLinks/UserLinks';
+import config from '../../../data/SiteConfig';
+import './Uses.scss';
 
-import vscodeIcon from "../../images/vscode-icon.png";
-import webstormIcon from "../../images/webstorm-icon.svg";
-import appleIcon from "../../images/apple-icon.png";
+import vscodeIcon from '../../images/vscode-icon.png';
+import webstormIcon from '../../images/webstorm-icon.svg';
+import appleIcon from '../../images/apple-icon.png';
 
-import vsCodeExtensions from "../../../content/uses/vscode-extensions";
+import vsCodeExtensions from '../../../content/uses/vscode-extensions';
 
 class About extends Component {
   componentDidMount() {
@@ -28,7 +28,7 @@ class About extends Component {
   render() {
     return (
       <div className="about-container md-grid mobile-fix">
-        <Card className="md-grid md-cell--8" style={{ borderRadius: "50px" }}>
+        <Card className="md-grid md-cell--8" style={{ borderRadius: '50px' }}>
           <div className="about-wrapper">
             <Link to="/">
               <Overdrive id="me">
@@ -41,7 +41,7 @@ class About extends Component {
             </Link>
             <h1 className="my-name">What I Use</h1>
 
-            <CardText style={{ width: "90%" }}>
+            <CardText style={{ width: '90%' }}>
               <CardTitle title="Editors" />
               <List>
                 <a

@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import CardTitle from "react-md/lib/Cards/CardTitle";
-import Avatar from "react-md/lib/Avatars";
-import FontIcon from "react-md/lib/FontIcons";
-import Link from "gatsby-link";
-import _ from "lodash";
-import "./PostInfo.scss";
+import React, { Component } from 'react';
+import CardTitle from 'react-md/lib/Cards/CardTitle';
+import Avatar from 'react-md/lib/Avatars';
+import FontIcon from 'react-md/lib/FontIcons';
+import Link from 'gatsby-link';
+import _ from 'lodash';
+import './PostInfo.scss';
 
 class PostInfo extends Component {
   render() {
@@ -25,7 +25,7 @@ class PostInfo extends Component {
             avatar={
               <Avatar icon={<FontIcon iconClassName="fa fa-folder-open" />} />
             }
-            title={"In category"}
+            title={'In category'}
             subtitle={post.category}
           />
         </Link>

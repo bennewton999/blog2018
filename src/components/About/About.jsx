@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import Card from "react-md/lib/Cards/Card";
-import CardText from "react-md/lib/Cards/CardText";
-import Link from "gatsby-link";
-import { TweenMax } from "gsap";
-import Overdrive from "react-overdrive";
-import UserLinks from "../UserLinks/UserLinks";
-import config from "../../../data/SiteConfig";
-import "./About.scss";
+import React, { Component } from 'react';
+import Card from 'react-md/lib/Cards/Card';
+import CardText from 'react-md/lib/Cards/CardText';
+import Link from 'gatsby-link';
+import { TweenMax } from 'gsap';
+import Overdrive from 'react-overdrive';
+import UserLinks from '../UserLinks/UserLinks';
+import config from '../../../data/SiteConfig';
+import './About.scss';
 
 class About extends Component {
   componentDidMount() {
@@ -18,7 +18,7 @@ class About extends Component {
   render() {
     return (
       <div className="about-container md-grid mobile-fix">
-        <Card className="md-grid md-cell--8" style={{ borderRadius: "50px" }}>
+        <Card className="md-grid md-cell--8" style={{ borderRadius: '50px' }}>
           <div className="about-wrapper">
             <Link to="/">
               <Overdrive id="me">

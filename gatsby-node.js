@@ -1,8 +1,8 @@
 /* eslint consistent-return: 0, array-callback-return: 0 */ 
 
-const path = require("path");
-const _ = require("lodash");
-const webpackLodashPlugin = require("lodash-webpack-plugin");
+const path = require('path');
+const _ = require('lodash');
+const webpackLodashPlugin = require('lodash-webpack-plugin');
 
 let postNodes = [];
 
@@ -22,22 +22,22 @@ function addSiblingNodes(createNodeField) {
     const prevNode = postNodes[prevID];
     createNodeField({
       node: currNode,
-      name: "nextTitle",
+      name: 'nextTitle',
       value: nextNode.frontmatter.title
     });
     createNodeField({
       node: currNode,
-      name: "nextSlug",
+      name: 'nextSlug',
       value: nextNode.fields.slug
     });
     createNodeField({
       node: currNode,
-      name: "prevTitle",
+      name: 'prevTitle',
       value: prevNode.frontmatter.title
     });
     createNodeField({
       node: currNode,
-      name: "prevSlug",
+      name: 'prevSlug',
       value: prevNode.fields.slug
     });
   }
@@ -46,28 +46,28 @@ function addSiblingNodes(createNodeField) {
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
   let slug;
-  if (node.internal.type === "MarkdownRemark") {
+  if (node.internal.type === 'MarkdownRemark') {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
     if (
-      Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, "title")
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
     ) {
       slug = `/${_.kebabCase(node.frontmatter.title)}`;
-    } else if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
+    } else if (parsedFilePath.name !== 'index' && parsedFilePath.dir !== '') {
       slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
-    } else if (parsedFilePath.dir === "") {
+    } else if (parsedFilePath.dir === '') {
       slug = `/${parsedFilePath.name}/`;
     } else {
       slug = `/${parsedFilePath.dir}/`;
     }
     if (
-      Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, "slug")
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
     ) {
       slug = `/${_.kebabCase(node.frontmatter.slug)}`;
     }
-    createNodeField({ node, name: "slug", value: slug });
+    createNodeField({ node, name: 'slug', value: slug });
     postNodes.push(node);
   }
 };
@@ -75,7 +75,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 exports.setFieldsOnGraphQLNodeType = ({ type, boundActionCreators }) => {
   const { name } = type;
   const { createNodeField } = boundActionCreators;
-  if (name === "MarkdownRemark") {
+  if (name === 'MarkdownRemark') {
     addSiblingNodes(createNodeField);
   }
 };
@@ -84,10 +84,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
   return new Promise((resolve, reject) => {
-    const postPage = path.resolve("src/templates/post.jsx");
-    const workPage = path.resolve("src/templates/work.jsx");
-    const tagPage = path.resolve("src/templates/tag.jsx");
-    const categoryPage = path.resolve("src/templates/category.jsx");
+    const postPage = path.resolve('src/templates/post.jsx');
+    const workPage = path.resolve('src/templates/work.jsx');
+    const tagPage = path.resolve('src/templates/tag.jsx');
+    const categoryPage = path.resolve('src/templates/category.jsx');
     resolve(
       graphql(
         `
@@ -173,7 +173,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 };
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
-  if (stage === "build-javascript") {
-    config.plugin("Lodash", webpackLodashPlugin, null);
+  if (stage === 'build-javascript') {
+    config.plugin('Lodash', webpackLodashPlugin, null);
   }
 };

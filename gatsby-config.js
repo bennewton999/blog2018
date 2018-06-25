@@ -1,6 +1,6 @@
-const config = require("./data/SiteConfig");
+const config = require('./data/SiteConfig');
 
-const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -17,32 +17,32 @@ module.exports = {
     }
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sass",
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "posts",
+        name: 'posts',
         path: `${__dirname}/content/${config.blogPostDir}`
       }
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "data",
+        name: 'data',
         path: `${__dirname}/content/${config.workDir}`
       }
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "otherClients",
+        name: 'otherClients',
         path: `${__dirname}/content/${config.otherClientsDir}`
       }
     },
     
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
@@ -55,72 +55,72 @@ module.exports = {
               // you may use this to prevent Prism from re-processing syntax.
               // This is an uncommon use-case though;
               // If you're unsure, it's best to use the default value.
-              classPrefix: "language-",
+              classPrefix: 'language-',
             },
           },
           `gatsby-remark-smartypants`,
           {
-            resolve: "gatsby-remark-images",
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 1200
             }
           },
           {
-            resolve: "gatsby-remark-responsive-iframe"
+            resolve: 'gatsby-remark-responsive-iframe'
           },
-          "gatsby-remark-copy-linked-files",
-          "gatsby-remark-autolink-headers"
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-autolink-headers'
         ]
       }
     },
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: config.siteGATrackingID
       }
     },
     {
-      resolve: "gatsby-plugin-nprogress",
+      resolve: 'gatsby-plugin-nprogress',
       options: {
-        color: "#111111"
+        color: '#111111'
       }
     },
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-catch-links",
-    "gatsby-plugin-twitter",
-    "gatsby-plugin-sitemap",
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-catch-links',
+    'gatsby-plugin-twitter',
+    'gatsby-plugin-sitemap',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.siteTitle,
         short_name: config.siteTitle,
         description: config.siteDescription,
         start_url: config.pathPrefix,
-        background_color: "#e0e0e0",
-        theme_color: "#111111",
-        display: "minimal-ui",
+        background_color: '#e0e0e0',
+        theme_color: '#111111',
+        display: 'minimal-ui',
         icons: [
           {
-            src: "/logos/logo-192.png",
-            sizes: "192x192",
-            type: "image/png"
+            src: '/logos/logo-192.png',
+            sizes: '192x192',
+            type: 'image/png'
           },
           {
-            src: "/logos/logo-512.png",
-            sizes: "512x512",
-            type: "image/png"
+            src: '/logos/logo-512.png',
+            sizes: '512x512',
+            type: 'image/png'
           }
         ]
       }
     },
-    "gatsby-plugin-offline",
+    'gatsby-plugin-offline',
     {
-      resolve: "gatsby-plugin-feed",
+      resolve: 'gatsby-plugin-feed',
       options: {
         setup(ref) {
           const ret = ref.query.site.siteMetadata.rssMetadata;
           ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-          ret.generator = "GatsbyJS Material Starter";
+          ret.generator = 'GatsbyJS Material Starter';
           return ret;
         },
         query: `
@@ -152,7 +152,7 @@ module.exports = {
                 author: rssMetadata.author,
                 url: rssMetadata.site_url + edge.node.fields.slug,
                 guid: rssMetadata.site_url + edge.node.fields.slug,
-                custom_elements: [{ "content:encoded": edge.node.html }]
+                custom_elements: [{ 'content:encoded': edge.node.html }]
               }));
             },
             query: `

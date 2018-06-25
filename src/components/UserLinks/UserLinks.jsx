@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Button from "react-md/lib/Buttons";
-import "./UserLinks.scss";
+import React, { Component } from 'react';
+import Button from 'react-md/lib/Buttons';
+import './UserLinks.scss';
 
 class UserLinks extends Component {
   getLinkElements() {
@@ -15,7 +15,7 @@ class UserLinks extends Component {
         iconClassName={link.iconClassName}
         href={link.url}
       >
-        {labeled ? link.label : ""}
+        {labeled ? link.label : ''}
       </Button>)
     );
   }
@@ -27,7 +27,7 @@ class UserLinks extends Component {
     }
     return (
       <div>
-        {contactMe ? <div>Feel free to contact me on any of these platforms</div> : ""}
+        {contactMe ? <div>Feel free to contact me on any of these platforms</div> : ''}
         <div className="user-links">
           {this.getLinkElements()}
         </div>

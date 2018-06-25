@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Link from "gatsby-link";
-import Overdrive from "react-overdrive";
-import { TweenMax } from "gsap";
-import config from "../../../data/SiteConfig";
-import "./Header.scss";
+import React, { Component } from 'react';
+import Link from 'gatsby-link';
+import Overdrive from 'react-overdrive';
+import { TweenMax } from 'gsap';
+import config from '../../../data/SiteConfig';
+import './Header.scss';
 
 class Header extends Component {
 

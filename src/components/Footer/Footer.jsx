@@ -1,9 +1,9 @@
-import React from "react";
-import Button from "react-md/lib/Buttons";
-import Link from "gatsby-link";
-import UserLinks from "../UserLinks/UserLinks";
-import config from "../../../data/SiteConfig";
-import "./Footer.scss";
+import React from 'react';
+import Button from 'react-md/lib/Buttons';
+import Link from 'gatsby-link';
+import UserLinks from '../UserLinks/UserLinks';
+import config from '../../../data/SiteConfig';
+import './Footer.scss';
 
 const Footer = (props) => {
 

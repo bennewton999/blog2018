@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import ReactDisqusComments from "react-disqus-comments";
-import Card from "react-md/lib/Cards/Card";
-import CardTitle from "react-md/lib/Cards/CardTitle";
-import CardText from "react-md/lib/Cards/CardText";
-import Avatar from "react-md/lib/Avatars";
-import FontIcon from "react-md/lib/FontIcons";
-import Snackbar from "react-md/lib/Snackbars";
-import config from "../../../data/SiteConfig";
+import React, { Component } from 'react';
+import ReactDisqusComments from 'react-disqus-comments';
+import Card from 'react-md/lib/Cards/Card';
+import CardTitle from 'react-md/lib/Cards/CardTitle';
+import CardText from 'react-md/lib/Cards/CardText';
+import Avatar from 'react-md/lib/Avatars';
+import FontIcon from 'react-md/lib/FontIcons';
+import Snackbar from 'react-md/lib/Snackbars';
+import config from '../../../data/SiteConfig';
 
 class Disqus extends Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class Disqus extends Component {
   }
   notifyAboutComment() {
     const toasts = this.state.toasts.slice();
-    toasts.push({ text: "New comment available!" });
+    toasts.push({ text: 'New comment available!' });
     this.setState({ toasts });
   }
   render() {

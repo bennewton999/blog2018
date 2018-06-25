@@ -1,10 +1,10 @@
-import React from "react";
-import Link from "gatsby-link";
-import Overdrive from "react-overdrive";
-import config from "../../../data/SiteConfig";
-import UserLinks from "../UserLinks/UserLinks";
-import Menu from "../Menu/Menu";
-import "./Hero.scss";
+import React from 'react';
+import Link from 'gatsby-link';
+import Overdrive from 'react-overdrive';
+import config from '../../../data/SiteConfig';
+import UserLinks from '../UserLinks/UserLinks';
+import Menu from '../Menu/Menu';
+import './Hero.scss';
 
 const Hero = () => (
   <div className="hero">
@@ -15,7 +15,7 @@ const Hero = () => (
     </Link>
     <h1 className="my-name">Ben Newton</h1>
     <h2>
-      Full Stack JavaScript Developer at{" "}
+      Full Stack JavaScript Developer at{' '}
       <a href="http://sapientrazorfish.com/">
         SR<span className="sr">_</span>
       </a>

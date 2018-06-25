@@ -1,28 +1,28 @@
 /* eslint consistent-return: 0, array-callback-return: 0 */
 
-import React from "react";
-import Helmet from "react-helmet";
-import PostListing from "../components/PostListing/PostListing";
-import WorkGrid from "../components/WorkGrid/WorkGrid";
-import Hero from "../components/Hero/Hero";
-import SEO from "../components/SEO/SEO";
-import config from "../../data/SiteConfig";
-import OtherClients from "../components/OtherClients/OtherClients";
+import React from 'react';
+import Helmet from 'react-helmet';
+import PostListing from '../components/PostListing/PostListing';
+import WorkGrid from '../components/WorkGrid/WorkGrid';
+import Hero from '../components/Hero/Hero';
+import SEO from '../components/SEO/SEO';
+import config from '../../data/SiteConfig';
+import OtherClients from '../components/OtherClients/OtherClients';
 
 class Index extends React.Component {
   render() {
     const { edges } = this.props.data.allMarkdownRemark;
     const postEdges = edges.filter(post => {
-      if (post.node.id.indexOf("/content/posts/") > 0) return post;
+      if (post.node.id.indexOf('/content/posts/') > 0) return post;
     });
     const workEdges = edges.filter(post => {
-      if (post.node.id.indexOf("/content/work/") > 0) return post;
+      if (post.node.id.indexOf('/content/work/') > 0) return post;
     });
     const otherClientEdges = edges.filter(post => {
-      if (post.node.id.indexOf("/content/old-clients/") > 0) return post;
+      if (post.node.id.indexOf('/content/old-clients/') > 0) return post;
     });
     return (
-      <div className="index-container" style={{ paddingBottom: "98px" }}>
+      <div className="index-container" style={{ paddingBottom: '98px' }}>
         <Helmet>
           <title>{config.siteTitle}</title>
           <link rel="canonical" href={`${config.siteUrl}`} />
@@ -32,7 +32,7 @@ class Index extends React.Component {
         <h1 className="md-display-2 md-text-center">Recent Clients</h1>
         <WorkGrid workEdges={workEdges} />
         <h4 className="md-display-1 md-text-center">
-          {"Other Clients I've Worked With"}
+          {'Other Clients I\'ve Worked With'}
         </h4>
         <OtherClients workEdges={otherClientEdges} />
         <h1 className="md-display-2 md-text-center">Recent Posts</h1>
