@@ -1,5 +1,5 @@
 ---
-title: "Never Make Another Crappy Commit Message Again"
+title: "Never Make Another Crappy Commit Message"
 date: "2018-07-23"
 category: "tech"
 postType: "post"
@@ -20,8 +20,8 @@ your desk. It's time to enter your commit message...
 >git commit -m "fixed bug"_
 ```
 
-😨 No! What? You won't even remember what you did when you wake up in the
-morning much less 6 months from now.
+No! What? You won't even remember what you did when you wake up in the morning
+much less 6 months from now.
 
 I've been guilty of this, especially on my personal projects. Occasionally I'll
 dress it up by describing the bug.
