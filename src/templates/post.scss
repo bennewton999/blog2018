@@ -103,8 +103,8 @@ $phone-status-bar-height: 24px - 12px;
                 border-top: 2px solid rgba(0, 0, 0, 0.12);
             }
 
-            table > tbody > tr > td {
-                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      table > tbody > tr > td:not(.blob-code) {
+        // border-bottom: 1px solid rgba(0, 0, 0, 0.12);
             }
 
             :target::before {
