@@ -1,42 +1,42 @@
 .about-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    .my-name {
-        font-weight: 200;
-        font-size: 6em;
-        font-size: 10vh;
-        margin-bottom: .2em;
-        margin-top: .2em;
-        line-height: 1;
-        display: block;
-        text-align: center;
-        @media (max-width: 640px) {
-          font-size: 4em;
-        }
-        @media (max-width: 420px) {
-          font-size: 2em;
-        }
-      }
-
-    .about-img {
-        border-radius: 50%;
-        width: 300px;
-        height: 300px;
-        margin: 10px 0;
-
-        @media (max-width: 360px - 1px) {
-            padding: 20px;
-        }
+  .my-name {
+    font-weight: 800;
+    font-size: 6em;
+    font-size: 10vh;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+    line-height: 1;
+    display: block;
+    text-align: center;
+    @media (max-width: 640px) {
+      font-size: 4em;
     }
-
-    .about-text {
-        max-width: 640px;
-        margin: 20px 0 !important;
-
-        @media (max-width: 360px - 1px) {
-            margin: 5px 0 !important;
-        }
+    @media (max-width: 420px) {
+      font-size: 2em;
     }
+  }
+
+  .about-img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 10px 0;
+
+    @media (max-width: 360px - 1px) {
+      padding: 20px;
+    }
+  }
+
+  .about-text {
+    max-width: 640px;
+    margin: 20px 0 !important;
+
+    @media (max-width: 360px - 1px) {
+      margin: 5px 0 !important;
+    }
+  }
 }

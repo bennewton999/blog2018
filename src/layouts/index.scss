@@ -1,16 +1,21 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Material+Icons');
+.md-headline,
+.md-card-title--large {
+  font-weight: 800;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,800|Material+Icons');
 
 @import '~react-md/src/scss/react-md';
 @import 'theme.scss';

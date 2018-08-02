@@ -19,16 +19,16 @@
   background-color: #fff;
   transition: 250ms;
   &:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
   }
 }
 
 .my-name {
-  font-weight: 200;
+  font-weight: 800;
   font-size: 6em;
   font-size: 10vh;
-  margin-bottom: .2em;
-  margin-top: .2em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
   line-height: 1;
   display: block;
   @media (max-width: 640px) {
