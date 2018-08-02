@@ -1,5 +1,5 @@
 ---
-title: "How To Handle Unexpected Modals In Your Puppeteer Tests"
+title: "How To Handle Pesky Modals In Your Puppeteer Tests"
 date: "2018-08-02"
 category: "tech"
 postType: "post"
