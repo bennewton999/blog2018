@@ -1,6 +1,6 @@
 ---
-title: "Stop iPerception's Modal From Failing Your Puppeteer Tests"
-date: "2018-08-01"
+title: "How To Handle Unexpected Modals In Your Puppeteer Tests"
+date: "2018-08-02"
 category: "tech"
 postType: "post"
 tags:
