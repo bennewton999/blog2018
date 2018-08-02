@@ -20,7 +20,7 @@ If you've worked on any large e-commerce sites, you've probably run into an iPer
 
 In my partucular case, I was running integration tests on an ecommerce funnel of a site I'm currently working on. The flow starts at the home page and then clicks through a series of steps to the confirmation page. As I wrote the tests, I would run the test after each additional step to make sure they were passing. While working on step 3, I suddenly began to get test failures on step 2 which had been passing previously.
 
-I set headless set to true in the Puppeteer config. This allowed me to watch the tests in the browser. I quickly realized the iPerception survey had been popping up in step 2, blocking my test from clicking the proper CTA to continue the flow, hence the failing test.
+I set headless to true in the Puppeteer config and watched the tests in the browser. I quickly realized the iPerception modal had began popping up in step 2, blocking my test from clicking the proper CTA to continue the flow, hence the failing test.
 
 ### Find and Handle the Modal in Puppeteer
 
