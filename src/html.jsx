@@ -1,6 +1,7 @@
 /* eslint import/no-unresolved:"off" */
 /* eslint import/extensions:"off" */
 /* eslint global-require:"off" */
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 import React from 'react';
 import favicon from './favicon.ico';
 
@@ -39,6 +40,10 @@ export default class HTML extends React.Component {
           {css}
         </head>
         <body>
+          <MessengerCustomerChat
+            pageId="1285370034940298"
+            appId=""
+          />
           <div
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
