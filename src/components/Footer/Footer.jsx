@@ -1,4 +1,5 @@
 import React from 'react';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 import Button from 'react-md/lib/Buttons';
 import Link from 'gatsby-link';
 import UserLinks from '../UserLinks/UserLinks';
@@ -28,6 +29,10 @@ const Footer = (props) => {
           </Link>
         </div>
       </div>
+      <MessengerCustomerChat
+        pageId="1285370034940298"
+        appId="206872540176782"
+      />
     </footer>
   );
 }
