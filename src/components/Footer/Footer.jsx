@@ -32,6 +32,10 @@ const Footer = (props) => {
       <MessengerCustomerChat
         pageId="1285370034940298"
         appId="206872540176782"
+        loggedInGreeting="Want to work together? Get in touch.."
+        loggedOutGreeting="Want to work together? Get in touch.."
+        greetingDialogDisplay="fade"
+        greetingDialogDelay="10"
       />
     </footer>
   );
