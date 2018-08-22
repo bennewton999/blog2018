@@ -3,7 +3,7 @@ module.exports = {
   workDir: 'work', // The name of directory that contains your work.
   otherClientsDir: 'old-clients',
   siteTitle: 'Ben Newton', // Site title.
-  siteTitleAlt: 'Ben Newton', // Alternative site title for SEO.
+  siteTitleAlt: 'Ben Newton, JavaScript Developer, Consultant', // Alternative site title for SEO.
   siteLogo: '/logos/ben.png', // Logo used for SEO and manifest.
   siteUrl: 'https://benenewton.com', // Domain of your website without pathPrefix.
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
@@ -18,7 +18,7 @@ module.exports = {
   userLocation: 'South Florida', // User location to display in the author segment.
   userAvatar: '/logos/ben.png', // User avatar to display in the author segment.
   userDescription:
-    'I have been building interactive websites for more than 20 years. I have architected and built, from the ground up, web applications that have run warehouse operations and business operations for a large multimillion dollar distribution business for over 12 years. I\'ve built full featured e-commerce sites for both B2B and B2C businesses. More recently, I have specialized in building and leading teams developing high traffic, consumer facing websites for major cruise lines, rental car companies, resorts, airlines and major retailers.', // User description to display in the author segment.
+    `I have been building websites for more than 20 years. I designed and built, from the ground up, web applications that have run warehouse operations and business operations for a large multimillion dollar distribution business for over a decade as well as all their e-commerce channels wich included B2B and B2C websites. Over the last few years, I have lead development teams building high traffic websites for large players in the Travel Industry including cruise lines, rental car companies, world famous resorts and major airlines as well as lead front end development for e-commerce sites for major brands such as Oakley and Bridgestone.`, // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
