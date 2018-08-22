@@ -18,7 +18,7 @@ module.exports = {
   userLocation: 'South Florida', // User location to display in the author segment.
   userAvatar: '/logos/ben.png', // User avatar to display in the author segment.
   userDescription:
-    `I have been building websites for more than 20 years. I designed and built, from the ground up, web applications that have run warehouse operations and business operations for a large multimillion dollar distribution business for over a decade as well as all their e-commerce channels wich included B2B and B2C websites. Over the last few years, I have lead development teams building high traffic websites for large players in the Travel Industry including cruise lines, rental car companies, world famous resorts and major airlines as well as lead front end development for e-commerce sites for major brands such as Oakley and Bridgestone.`, // User description to display in the author segment.
+    `I have been building large scale websites for more than 20 years. I have designed and built, from the ground up, web applications that ran warehouse operations and business operations for a large, multimillion dollar distribution business for over a decade as well as all of their e-commerce channels, which included multiple B2B and B2C websites. Over the last few years, I have lead development teams in building high traffic websites for some of the largest players in the Travel Industry including cruise lines, rental car companies, world famous resorts and major airlines as well as lead front end development for e-commerce sites for major brands such as Oakley and Bridgestone.`, // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
