@@ -24,27 +24,32 @@ module.exports = {
     {
       label: 'Instagram',
       url: 'https://instagram.com/bennewton999',
-      iconClassName: 'fa fa-instagram'
+      iconClassName: 'fab fa-instagram'
     },
     {
       label: 'Twitter',
       url: 'https://twitter.com/BenENewton',
-      iconClassName: 'fa fa-twitter'
+      iconClassName: 'fab fa-twitter'
     },
     {
       label: 'LinkedIn',
       url: 'https://www.linkedin.com/in/bennewton/',
-      iconClassName: 'fa fa-linkedin'
+      iconClassName: 'fab fa-linkedin'
     },
     {
       label: 'GitHub',
       url: 'https://github.com/bennewton999',
-      iconClassName: 'fa fa-github'
+      iconClassName: 'fab fa-github'
+    },
+    {
+      label: 'Facebook',
+      url: 'https://m.me/BenNewtonDeveloper',
+      iconClassName: 'fab fa-facebook-messenger'
     },
     {
       label: 'Email',
       url: 'mailto:bennewton999@gmail.com',
-      iconClassName: 'fa fa-envelope'
+      iconClassName: 'fas fa-at'
     }
   ],
   copyright: 'Copyright © 2018. Ben Newton' // Copyright string for the footer of the website and RSS feed.
