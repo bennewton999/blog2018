@@ -1,7 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import 'prismjs/themes/prism-twilight.css';
-import 'font-awesome/scss/font-awesome.scss';
+import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+import '@fortawesome/fontawesome-free/scss/brands.scss';
+import '@fortawesome/fontawesome-free/scss/solid.scss';
 import Footer from '../components/Footer/Footer';
 import config from '../../data/SiteConfig';
 import './index.scss';
@@ -45,7 +47,7 @@ export default class MainLayout extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      
+
       <div>
         <Helmet>
           <meta name="description" content={config.siteDescription} />
@@ -55,7 +57,7 @@ export default class MainLayout extends React.Component {
           <Footer />
         </div>
       </div>
-      
+
     );
   }
 }
