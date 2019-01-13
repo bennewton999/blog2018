@@ -15,10 +15,10 @@ const Hero = () => (
     </Link>
     <h1 className="my-name">Ben Newton</h1>
     <h2>
-      Full Stack JavaScript Developer at{' '}
-      <a href="http://sapientrazorfish.com/">
+      Full Stack JavaScript Developer at ...
+      {/* <a href="http://sapientrazorfish.com/">
         SR<span className="sr">_</span>
-      </a>
+      </a> */}
     </h2>
     <UserLinks contactMe config={config} />
     <Menu />
