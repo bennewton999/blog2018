@@ -3,10 +3,9 @@ import Helmet from 'react-helmet';
 import Card from 'react-md/lib/Cards';
 import CardText from 'react-md/lib/Cards/CardText';
 import UserInfo from '../components/UserInfo/UserInfo';
-import Disqus from '../components/Disqus/Disqus';
+import DiscussOnTwitter from '../components/discuss-on-twitter/discuss-on-twitter';
 import PostTags from '../components/PostTags/PostTags';
 import PostInfo from '../components/PostInfo/PostInfo';
-import SocialLinks from '../components/SocialLinks/SocialLinks';
 import PostSuggestions from '../components/PostSuggestions/PostSuggestions';
 import Header from '../components/Header/Header';
 import SEO from '../components/SEO/SEO';
@@ -56,6 +55,11 @@ export default class PostTemplate extends React.Component {
         <Helmet>
           <title>{`${post.title} | ${config.siteTitle}`}</title>
           <link rel="canonical" href={`${config.siteUrl}${post.id}`} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            name="twitter:image"
+            content={`${config.siteUrl}${post.id}twitter-card.jpg`}
+          />
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
         <div className={`md-grid md-cell--9 post-page-contents mobile-fix`}>
@@ -71,19 +75,16 @@ export default class PostTemplate extends React.Component {
             </CardText>
             <div className="post-meta">
               <PostTags tags={post.tags} />
-              <SocialLinks
-                postPath={slug}
-                postNode={postNode}
-                mobile={this.state.mobile}
-              />
             </div>
           </Card>
+
+          <DiscussOnTwitter config={config} post={post} />
+
           <UserInfo
             className="md-grid md-cell md-cell--12"
             config={config}
             expanded={expanded}
           />
-          <Disqus postNode={postNode} expanded={expanded} />
         </div>
 
         <PostSuggestions postNode={postNode} />
