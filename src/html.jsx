@@ -44,6 +44,12 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+          <script
+            async
+            type="text/javascript"
+            src="//cdn.carbonads.com/carbon.js?serve=CE7DEKQW&placement=benenewtoncom"
+            id="_carbonads_js"
+          />
         </body>
       </html>
     );

@@ -22,5 +22,6 @@ body {
 
 @import '~react-md/src/scss/react-md';
 @import 'theme.scss';
+@import 'carbon.scss';
 
 @include react-md-everything;
