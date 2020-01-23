@@ -77,7 +77,12 @@ export default class PostTemplate extends React.Component {
               <PostTags tags={post.tags} />
             </div>
           </Card>
-
+          <script
+            async
+            type="text/javascript"
+            src="//cdn.carbonads.com/carbon.js?serve=CE7DEKQW&placement=benenewtoncom"
+            id="_carbonads_js"
+          />
           <DiscussOnTwitter config={config} post={post} />
 
           <UserInfo
