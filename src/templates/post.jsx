@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import CarbonAds from 'react-carbon-ads';
 import Card from 'react-md/lib/Cards';
 import CardText from 'react-md/lib/Cards/CardText';
 import UserInfo from '../components/UserInfo/UserInfo';
@@ -77,12 +78,7 @@ export default class PostTemplate extends React.Component {
               <PostTags tags={post.tags} />
             </div>
           </Card>
-          <script
-            async
-            type="text/javascript"
-            src="//cdn.carbonads.com/carbon.js?serve=CE7DEKQW&placement=benenewtoncom"
-            id="_carbonads_js"
-          />
+          <CarbonAds carbonUrl="//cdn.carbonads.com/carbon.js?serve=CE7DEKQW&placement=benenewtoncom" />
           <DiscussOnTwitter config={config} post={post} />
 
           <UserInfo
