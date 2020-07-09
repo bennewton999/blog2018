@@ -1,4 +1,5 @@
 import React from 'react';
+import Script from 'react-load-script'
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import Button from 'react-md/lib/Buttons';
 import Link from 'gatsby-link';
@@ -13,9 +14,13 @@ const Footer = (props) => {
   const copyright = config.copyright;
   if (!copyright) {
     return null;
-  }
+  }  
   return (
     <footer className="footer">
+      <Script
+        attributes={{ 'data-uid': 'aca97c3f5c' }}
+        url="https://crafty-inventor-3228.ck.page/aca97c3f5c/index.js"
+      />
       {userLinks ? <UserLinks config={config} labeled /> : null}
       <div className="notice-container">
         <div className="copyright">
