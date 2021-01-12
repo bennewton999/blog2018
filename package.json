@@ -32,7 +32,7 @@
     "gsap": "^1.20.6",
     "lodash": "^4.17.19",
     "lodash-webpack-plugin": "^0.11.5",
-    "prismjs": "^1.15.0",
+    "prismjs": "^1.21.0",
     "react": "^15.6.2",
     "react-carbon-ads": "1.0.4",
     "react-disqus-comments": "^1.2.0",
