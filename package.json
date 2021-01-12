@@ -30,7 +30,7 @@
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
     "gsap": "^1.20.6",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.19",
     "lodash-webpack-plugin": "^0.11.5",
     "prismjs": "^1.15.0",
     "react": "^15.6.2",
