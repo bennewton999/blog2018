@@ -51,5 +51,5 @@ module.exports = {
       iconClassName: 'fas fa-at'
     }
   ],
-  copyright: 'Copyright © 2020. Ben Newton' // Copyright string for the footer of the website and RSS feed.
+  copyright: 'Copyright © 2021. Ben Newton' // Copyright string for the footer of the website and RSS feed.
 };
