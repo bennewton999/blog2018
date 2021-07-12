@@ -40,7 +40,6 @@ module.exports = {
         path: `${__dirname}/content/${config.otherClientsDir}`
       }
     },
-    
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -68,8 +67,8 @@ module.exports = {
               // you may use this to prevent Prism from re-processing syntax.
               // This is an uncommon use-case though;
               // If you're unsure, it's best to use the default value.
-              classPrefix: 'language-',
-            },
+              classPrefix: 'language-'
+            }
           },
           `gatsby-remark-smartypants`,
           {
@@ -193,6 +192,15 @@ module.exports = {
           `,
             output: config.siteRss
           }
+        ]
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-social-cards`
+          // ...
         ]
       }
     }

@@ -1,4 +1,4 @@
-/* eslint consistent-return: 0, array-callback-return: 0 */ 
+/* eslint consistent-return: 0, array-callback-return: 0 */
 
 const path = require('path');
 const _ = require('lodash');
@@ -7,9 +7,10 @@ const webpackLodashPlugin = require('lodash-webpack-plugin');
 let postNodes = [];
 
 function addSiblingNodes(createNodeField) {
-  
-  postNodes = postNodes.filter(post => {  if (post.id.indexOf('/content/posts/') > 0) return post; });
-  
+  postNodes = postNodes.filter(post => {
+    if (post.id.indexOf('/content/posts/') > 0) return post;
+  });
+
   postNodes.sort(
     ({ frontmatter: { date: date1 } }, { frontmatter: { date: date2 } }) =>
       new Date(date1) - new Date(date2)
@@ -91,23 +92,23 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     resolve(
       graphql(
         `
-        {
-          allMarkdownRemark {
-            edges {
-              node {
-                frontmatter {
-                  tags
-                  category
-                  postType
-                }
-                fields {
-                  slug
+          {
+            allMarkdownRemark {
+              edges {
+                node {
+                  frontmatter {
+                    tags
+                    category
+                    postType
+                  }
+                  fields {
+                    slug
+                  }
                 }
               }
             }
           }
-        }
-      `
+        `
       ).then(result => {
         if (result.errors) {
           /* eslint no-console: "off" */
@@ -135,7 +136,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 slug: edge.node.fields.slug
               }
             });
-          } else { // blog post
+          } else {
+            // blog post
             createPage({
               path: edge.node.fields.slug,
               component: postPage,
@@ -175,5 +177,20 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 exports.modifyWebpackConfig = ({ config, stage }) => {
   if (stage === 'build-javascript') {
     config.plugin('Lodash', webpackLodashPlugin, null);
+  }
+};
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === 'build-html') {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /react-carbon-ads/,
+            use: loaders.null()
+          }
+        ]
+      }
+    });
   }
 };

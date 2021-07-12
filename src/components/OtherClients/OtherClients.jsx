@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import WorkLogo from '../WorkLogo/WorkLogo'
+import WorkLogo from '../WorkLogo/WorkLogo';
 import './OtherClients.scss';
 
 class OtherClients extends Component {
-  
   getWorkList() {
-    const workList = this.props.workEdges.map(workEdge => workEdge.node.frontmatter);
+    const workList = this.props.workEdges.map(
+      workEdge => workEdge.node.frontmatter
+    );
     return workList;
   }
 

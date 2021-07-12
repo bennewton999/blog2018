@@ -32,7 +32,7 @@ npx bennewton
 
 After a quick, temporary install, the downloaded npm module will display the following in your terminal leaving nothing behind on your drive.
 
-![npx bennewton output](./bennewton-output.png)
+![npx bennewton output](https://benenewton.com/static/bennewton-output-f9dd415603c71b22621cd960af8dfa80-78ae8.png)
 
 The npx command downloads and runs a NPM module on your machine without installing it permanently. This is perfect for this type of text output module.
 
