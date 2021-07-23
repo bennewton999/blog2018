@@ -35,8 +35,6 @@ class Index extends React.Component {
           {'Other Clients I\'ve Worked With'}
         </h4>
         <OtherClients workEdges={otherClientEdges} />
-        <h1 className="md-display-2 md-text-center">Recent Posts</h1>
-        <PostListing postEdges={postEdges} />
       </div>
     );
   }
