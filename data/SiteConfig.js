@@ -36,6 +36,11 @@ module.exports = {
       iconClassName: 'fab fa-linkedin'
     },
     {
+      label: 'Medium',
+      url: 'https://medium.com/@benenewton',
+      iconClassName: 'fab fa-medium'
+    },
+    {
       label: 'GitHub',
       url: 'https://github.com/bennewton999',
       iconClassName: 'fab fa-github'
