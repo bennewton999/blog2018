@@ -5,7 +5,6 @@ import './Menu.scss';
 const Menu = () => (
   <div className="menu">
     <Link to="/about">About Me</Link>
-    <Link to="/uses">{'My Set Up'}</Link>
   </div>
 );
 
